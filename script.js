@@ -11,6 +11,8 @@ const botDoorPath = "./images/robot.svg";
 const beachDoorPath = "./images/beach.svg";
 const spaceDoorPath = "./images/space.svg";
 
+//Global variables - should const be used?
+const numClosedDoors = 3;
 
 
 doorImage1.onclick = () =>{
@@ -23,4 +25,10 @@ doorImage2.onclick = () => {
 
 doorImage3.onclick = () => {
     doorImage3.src = spaceDoorPath;
+}
+
+const randomChoreDoorGenerator = () => {
+
+const Math = Math.floor(Math.random() *numClosedDoors);
+
 }
